@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Draw Etch a Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id='header'>
+        <h1>Etch A Sketch</h1>
+    </header>
+    <main>
+        <section id='options'>
+            <!-- Extra options to put in:
+                square selector (remove hover and do it on click instead), eraser mode, rainbow mode -->
+            <h2>Select your options:</h2>
+            <section id='input'>
+                <label for="userInput" id="label"></label>
+                <input type="range" name="userInput" id="userInput" min='1' max='100' value='16'>
+            </section>
+            <section id='input'>
+                <label for="color" id="label">Select your color:</label>
+                <input type="color" name="color" id="userColor">
+            </section>
+            <section id="buttons">
+                <button id="default">Default</button>
+                <button id='clear'>Erase</button>
+            </section>
+        </section>
+        <section id='right'>
+            <div id="container"></div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
